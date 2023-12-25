@@ -1,0 +1,99 @@
+<div class="it-container">
+    <h1 class="it-title">Functions in CPP</h1>
+    <p class="it-content">Functions in C++ are modular blocks of code that perform a specific task. They help in organizing code into manageable and reusable units. A function in C++ consists of a function declaration, a function definition, and a function call. Functions can have parameters and return values, contributing to the modular and structured design of C++ programs.</p>
+    <h2 class="it-heading">The main() function</h2>
+    <p class="it-content">The main function is a special function in C++ that serves as the entry point for the execution of a program. When a C++ program is run, the execution starts from the main function. The main function can call other functions, and it typically contains the statements that define the primary logic of the program. The signature of the main function is standardized as int main(), and it may also have parameters depending on the requirements of the program.</p>
+    <h2 class="it-heading"> Function prototyping & Defining</h2>
+    <p class="it-content">Function prototyping involves declaring the function's signature (return type, function name, and parameter types) before its actual definition. This allows the compiler to recognize the function and its interface before it's used in the program. Function prototypes are often placed at the beginning of the code or in header files.</p>
+    <p class="it-content">Function defining involves providing the actual implementation or body of the function. The function definition includes the code that executes when the function is called. The combination of function prototypes and definitions supports the modular structure of C++ programs, enabling the separation of interface (prototype) and implementation (definition).</p>
+    <p class="it-content">In summary, functions in C++ are essential for code organization and reusability. The main function serves as the starting point for program execution. Function prototyping and defining allow for a clear separation between declaring the function's interface and providing its implementation.</p>
+    <h2 class="it-heading">In-line function</h2>
+    <p class="it-content">When the program executes the function call instruction the CPU stores the memory address of the instruction following the function call, copies the arguments of the function on the stack, and finally transfers control to the specified function. The CPU then executes the function code, stores the function return value in a predefined memory location/register, and returns control to the calling function. This can become overhead if the execution time of the function is less than the switching time from the caller function to called function (callee). </p>
+    <p class="it-content">For functions that are large and/or perform complex tasks, the overhead of the function call is usually insignificant compared to the amount of time the function takes to run. However, for small, commonly-used functions, the time needed to make the function call is often a lot more than the time needed to actually execute the function’s code. This overhead occurs for small functions because the execution time of a small function is less than the switching time.</p>
+
+<div class="simple-program">
+    <h2 class="hl-white">Example : function prototyping</h2>
+<div class="code-block-container">
+    <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+    <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+    <button class="compile-button" data-compiler-url="https://www.jdoodle.com/a/70zi"><i class="fas fa-play"></i>  Compile it!</button>
+    <pre class="code-block">
+        <code class="code">
+#include &lt;iostream &gt;
+
+    // Function prototype
+    void displayMessage();
+    
+    int main() {
+        // Function call
+        displayMessage();
+        return 0;
+    }
+    
+    // Function definition
+    void displayMessage() {
+        std::cout << "This is the displayMessage function." << std::endl;
+    }
+</code>
+</pre>
+</div>
+</div>
+
+<h3 class="hl-white">Screen Display :</h3>
+<pre class="code-block">
+    <code class="code">
+        This is the displayMessage function.
+    </code>
+</pre>
+<div class="simple-program">
+    <h2 class="hl-white">Example : Inline-function</h2>
+<div class="code-block-container">
+    <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+    <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+    <button class="compile-button" data-compiler-url="https://www.jdoodle.com/a/70zr"><i class="fas fa-play"></i>  Compile it!</button>
+    <pre class="code-block">
+        <code class="code">
+#include &lt;iostream &gt;
+
+    // Function prototype
+    void displayMessage();
+    
+    int main() {
+        // Function call
+        displayMessage();
+        return 0;
+    }
+    
+    // Function definition
+    void displayMessage() {
+        std::cout << "This is the displayMessage function." << std::endl;
+    }
+</code>
+</pre>
+</div>
+</div>
+
+<h3 class="hl-white">Screen Display :</h3>
+<pre class="code-block">
+    <code class="code">
+        This is the displayMessage function.
+    </code>
+</pre>
+
+<br>
+<div class="main-content">
+    <div class="button-container">
+      <button class="button left-button" onclick="loadContent('dataTypes')">
+        <i class="fas fa-chevron-left"></i>
+        <a class="tp" href="#top">Previous</a>
+      </button>
+    </div>
+    
+    <div class="button-container">
+      <button class="button right-button" onclick="loadContent('callFunc')"> 
+        <a class="tp" href="#top">Next</a>
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</div>

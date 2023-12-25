@@ -1,0 +1,106 @@
+<div class="it-container">
+    <h1 class="it-title">Calling Function</h1>
+    <div class="key-features">
+      <h2 class="it-heading">Call by Value</h2>
+      <p class="it-content">In Call by Value, the actual values of the arguments are passed to the function. Any modifications made to the parameters inside the function do not affect the original values outside the function.</p>
+<div class="simple-program">
+    <h2 class="hl-white">Example : Call by value</h2>
+<div class="code-block-container">
+    <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+    <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+    <button class="compile-button" data-compiler-url="https://www.jdoodle.com/a/70zU"><i class="fas fa-play"></i>  Compile it!</button>
+    <pre class="code-block">
+        <code class="code">
+#include &lt;iostream &gt;
+
+    // Function prototype
+    void incrementValue(int x);
+    
+    int main() {
+        int num = 5;
+    
+        // Function call by value
+        incrementValue(num);
+    
+        // The original value remains unchanged
+        std::cout << "Original value: " << num << std::endl;
+    
+        return 0;
+    }
+    
+    // Function definition
+    void incrementValue(int x) {
+        x++;
+        std::cout << "Incremented value inside function: " << x << std::endl;
+    }
+    
+</code>
+</pre>
+</div>
+</div>
+
+<h3 class="hl-white">Screen Display :</h3>
+<pre class="code-block">
+    <code class="code">
+        Incremented value inside function: 6
+        Original value: 5
+    </code>
+</pre>
+
+<br>
+///////
+
+<h2 class="it-heading">Call by reference</h2>
+<p class="it-content">In Call by Reference, the memory address of the actual arguments is passed to the function. Modifications made to the parameters inside the function directly affect the original values outside the function.</p>
+<div class="simple-program">
+<h2 class="hl-white">Example : Call by reference</h2>
+<div class="code-block-container">
+<button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+<button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+<button class="compile-button" data-compiler-url="https://www.jdoodle.com/a/70zV"><i class="fas fa-play"></i>  Compile it!</button>
+<pre class="code-block">
+  <code class="code">
+#include &lt;iostream &gt;
+
+// Function prototype
+void incrementValueByReference(int &x);
+
+int main() {
+    int num = 5;
+
+    // Function call by reference
+    incrementValueByReference(num);
+
+    // The original value is modified
+    std::cout << "Modified value: " << num << std::endl;
+
+    return 0;
+}
+
+// Function definition
+void incrementValueByReference(int &x) {
+    x++;
+    std::cout << "Incremented value inside function: " << x << std::endl;
+}
+</code>
+</pre>
+</div>
+</div>
+
+<h3 class="hl-white">Screen Display :</h3>
+<pre class="code-block">
+<code class="code">
+    Incremented value inside function: 6
+    Modified value: 6
+</code>
+</pre>
+<br>
+/////////
+<div class="main-content">
+    <div class="button-container">
+      <button class="button left-button" onclick="loadContent('dataTypes')">
+        <i class="fas fa-chevron-left"></i>
+        <a class="tp" href="#top">Previous</a>
+      </button>
+    </div>
+    

@@ -1,0 +1,125 @@
+<div class="it-container">
+    <h1 class="it-title">Data Types</h1>
+    <p class="it-content">A data types defines a set of values and a set of operations that can be applied to those values. The set of values for each type is known as the domain for the type.</p>
+    <img src="/src/datatypes" alt="dataTypes" class="image1">
+    <h2 class="it-heading">Basic/Fundamental Data types in C++</h2>
+    <p class="it-content">Following table dictates size ,type and range of basic data types of C++ :</p>
+    <table class="custom-table">
+        <tr>
+            <th>Data Types</th>
+            <th>Keywords</th>
+            <th>Bits</th>
+            <th>Range</th>
+        </tr>
+        <tr>
+            <td>Integers</td>
+            <td>int</td>
+            <td>16 or 32</td>
+            <td>-32,768 to 32,767 (for 16-bit) or -2,147,483,648 to 2,147,483,647 (for 32-bit)</td>
+        </tr>
+        <tr>
+            <td>Long Integers</td>
+            <td>long</td>
+            <td>32 or 64</td>
+            <td>Varies depending on the system</td>
+        </tr>
+        <tr>
+            <td>Short Integers</td>
+            <td>short</td>
+            <td>16</td>
+            <td>-32,768 to 32,767</td>
+        </tr>
+        <tr>
+            <td>Unsigned Integers</td>
+            <td>unsigned</td>
+            <td>16 or 32</td>
+            <td>0 to 65,535 (for 16-bit) or 0 to 4,294,967,295 (for 32-bit)</td>
+        </tr>
+        <tr>
+            <td>Characters</td>
+            <td>char</td>
+            <td>8</td>
+            <td>-128 to 127</td>
+        </tr>
+        <tr>
+            <td>Floating Point</td>
+            <td>float</td>
+            <td>32</td>
+            <td>Varies based on IEEE 754 standard</td>
+        </tr>
+        <tr>
+            <td>Double Floating Point</td>
+            <td>double</td>
+            <td>64</td>
+            <td>Varies based on IEEE 754 standard</td>
+        </tr>
+    </table>
+
+
+    <div class="simple-program">
+        <h2 class="hl-white">Example : Sample C++ Data type</h2>
+    <div class="code-block-container">
+        <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+        <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+        <button class="compile-button" data-compiler-url="https://www.jdoodle.com/a/70yU"><i class="fas fa-play"></i>  Compile it!</button>
+        <pre class="code-block">
+            <code class="code">
+        #include &lt;iostream&gt;
+        #include &lt;string&gt;
+        using namespace std;
+         
+        int main () {
+          // Creating variables
+          int myNum = 5;               // Integer (whole number)
+          float myFloatNum = 5.99;     // Floating point number
+          double myDoubleNum = 9.98;   // Floating point number
+          char myLetter = 'D';         // Character
+          bool myBoolean = true;       // Boolean
+          string myString = "Hello";   // String
+           
+          // Print variable values
+          cout << "int: " << myNum << "\n";
+          cout << "float: " << myFloatNum << "\n";
+          cout << "double: " << myDoubleNum << "\n";
+          cout << "char: " << myLetter << "\n";
+          cout << "bool: " << myBoolean << "\n";
+          cout << "string: " << myString << "\n";
+         
+          return 0;
+        }
+    </code>
+</pre>
+</div>
+</div>
+
+<h3 class="hl-white">Screen Display :</h3>
+<pre class="code-block">
+    <code class="code">
+        int: 5
+        float: 5.99
+        double: 9.98
+        char: D
+        bool: 1
+        string: Hello
+    </code>
+</pre>
+
+<br>
+<div class="main-content">
+    <div class="button-container">
+      <button class="button left-button" onclick="loadContent('cppStructure')">
+        <i class="fas fa-chevron-left"></i>
+        <a class="tp" href="#top">Previous</a>
+      </button>
+    </div>
+    
+    <div class="button-container">
+      <button class="button right-button" onclick="loadContent('funcCpp')"> 
+        <a class="tp" href="#top">Next</a>
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+

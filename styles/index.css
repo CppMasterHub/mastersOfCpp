@@ -1,0 +1,56 @@
+
+/* Custom styles for the index page */
+.vertical-menu {
+    background-color: #333;
+    padding: 20px 10px;
+    text-align: left;
+    width: 20%;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    bottom: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    /* Your existing vertical menu styles here */
+}
+
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/* Additional styles for the vertical menu items */
+.menu-item {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #FFA500;
+    color: #fff;
+}
+
+/* Media query for responsive layout */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens if needed */
+}
+/* Common Reset styles */
+body, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Vertical Navigation styles */
+body {
+    background-color: #1A1A1A;
+    font-family: 'Arial', sans-serif;
+}
+.image1 {
+    display: block;
+    margin: 0 auto;
+}

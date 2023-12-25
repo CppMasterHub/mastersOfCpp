@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cpp Master Hub</title>
+    <link rel="icon" href="/src/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/src/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="/scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body onload="checkScreenWidth()">
+    <header>
+        <!-- Include your header content here (header.html) -->
+        <a id="top"></a>
+        <div class="header-content">
+           <h1 class="custom-h1">Cpp Master Hub</h1>
+            <nav>
+                 <ul class="custom-horizontal">
+                    <li><a href="#" onclick="loadContent('welcome')"><i class="fas fa-home"></i>  Home</a></li>
+                    <li><a href="#" onclick="openCompiler('https://www.jdoodle.com/online-compiler-c++/')"><i class="fas fa-play"></i>   Compiler</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1q7V7Z9QBKmuZEx5GjCQsFVjtsE531nn5?usp=drive_link" target="_blank"><i class="far fa-file-alt"></i>References</a></li>
+                    <li><a href="q.html"><i class="fas fa-award"></i>  Certification</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScQ6A9vEFgdWbjkTqqThUgHnq-EwcndIgH8MJUJpaWHUYYN2A/viewform?usp=sf_link" target="_blank"><i class="far fa-question-circle"></i>  Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="vertical-menu">
+        <div class="vertical-menu-content">
+            <ul class="vertical-list">
+                <li class="vertical-menu-item"><b class="b1" onclick="loadContent('welcome')"><i class="fas fa-globe"></i>  Welcome</b></li>
+                <hr class="hr1">
+
+                <li class="vertical-menu-item has-submenu"><b class="b1"><i class="fas fa-cogs"></i>  Fundamentals Of C++</b>
+                    <ul class="vertical-submenu">
+                        <li><a href="#" class="li1" onclick="loadContent('cppEnvro')"><i class="fas fa-laptop-code"></i>   C++ Programming Environment</a></li>
+                        <li><a href="#" class="li1" onclick="loadContent('cppConcepts')"><i class="fas fa-code"></i>   C++ Concepts and Applications</a></li>
+                        <li><a href="#" class="li1" onclick="loadContent('cppStructure')"><i class="fas fa-code-branch"></i>   Structure of C++ Programming</a></li>
+                        <li><a href="#" class="li1" onclick="loadContent('Variables')"><i class="fas fa-square"></i>   Variables</a></li>
+                        <li><a href="#" class="li1" onclick="loadContent('dataTypes')"><i class="fas fa-database"></i>   Data Types</a></li>                        
+                    </ul>
+                </li>
+                <hr class="hr1">
+                
+
+                <li class="vertical-menu-item has-submenu"><b class="b1"><i class="fas fa-code"></i>  Functions</b>
+                    <ul class="vertical-submenu">
+                        <li><a href="#" class="li1" onclick="loadContent('funcCpp')"><i class="fas fa-code"></i>   Functions in C++</a></li>
+                        <li><a href="#" class="li1" onclick="loadContent('callFunc')"><i class="fas fa-code"></i>   Calling a Function</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Default Arguments</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Constant Arguments</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Function Overloading</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Command Line</a></li>
+                    </ul>
+                </li>
+                <hr class="hr1">
+                
+
+                <li class="vertical-menu-item has-submenu"><b class="b1"><i class="fas fa-code-branch"></i>  Class and Objects</b>
+                    <ul class="vertical-submenu">
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Overview of C Structure</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Limitations of Structure</a></li>
+                        <li class="vertical-menu-item has-submenu"><a href="#" class="li1"><i class="fas fa-code"></i>   Class and Objects</a>
+                            <ul class="vertical-submenu">
+                                <li><a href="#" class="li2"><i class="fas fa-file-code"></i>   Class Declaration</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-object-group"></i>   Objects of Class</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-key"></i>   Accessing Class Members</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-memory"></i>   Memory Allocation for Objects</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Defining Member Function</a></li>
+                        <li class="vertical-menu-item has-submenu"><a href="#" class="li1"><i class="fas fa-code"></i>   Access Specifier</a>
+                            <ul class="vertical-submenu">
+                                <li><a href="#" class="li2"><i class="fas fa-globe"></i>   Public</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-user-secret"></i>   Private</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-shield-alt"></i>   Protected</a></li>
+                            </ul>
+                        </li>
+                        <li class="vertical-menu-item has-submenu"><a href="#" class="li1"><i class="fas fa-code"></i>   Static &amp; Static vs Non-Static only</a>
+                            <ul class="vertical-submenu">
+                                <li><a href="#" class="li2"><i class="fas fa-database"></i>   Static Data Members</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-cogs"></i>   Static Member Functions</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Array of Objects</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Passing Objects as Arguments</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Friend Function</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Friend Class</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Characteristics of Friend Function</a></li>
+                        <li class="vertical-menu-item has-submenu"><a href="#" class="li1"><i class="fas fa-code"></i>   Pointer to Members</a>
+                            <ul class="vertical-submenu">
+                                <li><a href="#" class="li2"><i class="fas fa-hand-pointer"></i>   Pointers to Objects</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-arrows-alt"></i>   Pointer to Array of Objects</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="hr1">
+                
+
+                <li class="vertical-menu-item has-submenu"><b class="b1"><i class="fas fa-cogs"></i>   Constructors and Destructors</b>
+                    <ul class="vertical-submenu">
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Constructors Concepts</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Declaration Concepts</a></li> 
+                        <li class="vertical-menu-item has-submenu"><a href="#" class="li1"><i class="fas fa-code"></i>   Types of Constructors</a>
+                            <ul class="vertical-submenu">
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Default Constructor</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Parameterized Constructor</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Copy Constructor</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Dynamic Constructor</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Constructor Overloading</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Constructor with Default Arguments</a></li> 
+                    </ul>
+                </li>
+                <hr class="hr1">
+                
+                <li class="vertical-menu-item has-submenu"><b class="b1"><i class="fas fa-code-branch"></i>   Inheritance</b>
+                    <ul class="vertical-submenu">
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Concepts of Inheritance</a></li>
+                        <li class="vertical-menu-item has-submenu"><a href="#" class="li1"><i class="fas fa-code"></i>   Inheritance Accessibility</a>
+                            <ul class="vertical-submenu">
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Public</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Private</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Protected</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Visibility of Inherited Members</a></li>
+                        <li class="vertical-menu-item has-submenu"><a href="#" class="li1"><i class="fas fa-code"></i>   Types of Inheritance</a>
+                            <ul class="vertical-submenu">
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Single Inheritance</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Multiple Inheritance</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Multilevel Inheritance</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Hierarchical Inheritance</a></li>
+                                <li><a href="#" class="li2"><i class="fas fa-check-square"></i>   Hybrid Inheritance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Virtual Base Class</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Abstract Classes</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Constructor in Derived Classes</a></li>
+                    </ul>
+                </li>
+                <hr class="hr1">
+                
+        
+
+                <li class="vertical-menu-item has-submenu"><b class="b1"><i class="fas fa-cube"></i>   Polymorphism</b>
+                    <ul class="vertical-submenu">
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Pointers in C++</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Pointers to Objects</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Pointer to Derived class</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   This Pointer</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Types of Polymorphism</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Virtual functions</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Pointer to Virtual functions</a></li>
+                    </ul>
+                </li>
+                <hr class="hr1">
+                
+                <li class="vertical-menu-item has-submenu"><b class="b1"><i class="fas fa-terminal"></i>  Managing Console I/O Operations</b>
+                    <ul class="vertical-submenu">
+                        <li><a href="#" class="li1"><i class="fas fa-cog"></i>   Concept of stream</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-sign-in-alt"></i>   Input-Output streams</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   C++ stream classes</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Unformatted I/O Operations</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Formatted I/O Operations</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   Formatting with Manipulators</a></li>
+                        <li><a href="#" class="li1"><i class="fas fa-code"></i>   File Operations</a></li>
+                    </ul>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <div class="main-content-inner" id="mainContent">
+            <div class="it-container">
+                <h1 class="it-title">Welcome</h1>
+                <p class="it-content">
+                    C++ (pronounced "see plus plus") is a powerful and versatile programming language that builds upon the foundation of the C programming language. It was developed by Bjarne Stroustrup in the late 1970s and is widely used for various applications, including system software, game development, high-performance applications, embedded systems, and more. C++ combines the features of C with object-oriented programming (OOP) principles, making it a popular choice for developers seeking both low-level control and high-level abstractions.
+                </p>
+                <div class="key-features">
+                    <h2 class="it-heading">Key Features of C++:</h2>
+                    <ol class="it-list">
+                        <li>Object-Oriented Programming (OOP): C++ supports the principles of OOP, allowing developers to organize code into classes and objects, promoting code reusability and modularity.</li>
+                        <li>Strong Type System: C++ enforces strict type checking, helping catch type-related errors during compilation and ensuring safer and more predictable code behavior.</li>
+                        <li>Performance: C++ provides low-level memory manipulation capabilities, allowing developers to optimize code for maximum performance in resource-intensive applications.</li>
+                        <li>Standard Template Library (STL): The STL offers a collection of pre-built classes and functions, simplifying common programming tasks and enhancing code efficiency.</li>
+                        <li>Portability: C++ code can be compiled and executed on various platforms and operating systems, enabling cross-platform development and deployment.</li>
+                        <li>Memory Management: C++ gives developers control over memory management through features like manual memory allocation and deallocation, offering flexibility in resource usage.</li>
+                        <li>Multiple Paradigms: In addition to OOP, C++ supports procedural and generic programming paradigms, allowing developers to choose the most suitable approach for their projects.</li>
+                        <li>Community and Ecosystem: C++ has a large and active community of developers, extensive libraries, and frameworks, fostering collaboration and providing solutions to various challenges.</li>
+                    </ol>
+                </div>
+                <div class="getting-started">
+                    <h2 class="it-heading">Getting Started with C++:</h2>
+                    <p class="it-content">To begin programming in C++, you need a compiler (such as GCC, Clang, or Microsoft Visual C++) and a text editor or integrated development environment (IDE) like Visual Studio, Code::Blocks, or CLion. You'll write C++ code in source files with the ".cpp" extension.</p>
+                </div>
+                <div class="simple-program">
+                    <h2 class="it-heading">A Simple C++ Program:</h2>
+                    <p class="it-content">Here's a basic "Hello, World!" program in C++ to demonstrate the syntax:</p>
+                    <div class="code-block-container">
+                        <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+                        <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+                        <button class="compile-button" onclick="openCompiler('https://www.jdoodle.com/iembed/v0/L6z')"><i class="fas fa-play"></i>  Compile it!</button>
+                        <pre class="code-block">
+                            <code class="code">
+                #include &lt;iostream&gt;
+                
+                int main() {
+                    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+                    return 0;
+                }</code>
+                        </pre>
+                    </div>
+                </div>
+                
+                
+                <p class="conclusion">As you delve deeper into C++, you'll explore concepts like data types, variables, control structures, functions, classes, templates, and more. Whether you're a beginner or an experienced programmer, C++ offers a rich set of tools and features to tackle a wide range of programming tasks.</p><br>
+                <div class="button-container">
+                    <div class="main-content">
+                        <div class="button-container">
+                          <button class="button center-button" onclick="loadContent('cppEnvro')">
+                            <i class="fas fa-star"></i>  
+                            <a class="tp" href="#top">Get Started !</a>       
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+        <div class="footer-content">
+            <hr>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2023 Cpp Master Hub. All Rights Reserved.</p>
+                <p class="motivational-line">Coding is the journey to turn your imagination into reality.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

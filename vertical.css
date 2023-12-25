@@ -1,0 +1,80 @@
+/* Reset some default styles */
+body, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Vertical Navigation styles */
+.vertical-menu {
+    width: 20%;
+    background-color: #333;
+    padding: 10px;
+    border-top: 4px solid #FFA500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-menu-item {
+    margin-bottom: 10px;
+}
+
+.vertical-menu-item a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.vertical-menu-item a:hover {
+    background-color: #FFA500;
+}
+
+/* Nested list styles */
+.vertical-submenu {
+    display: none;
+    background-color: #444;
+    width: 100%;
+}
+
+.vertical-menu-item.has-submenu:hover > .vertical-submenu {
+    display: block;
+}
+
+.vertical-submenu li {
+    width: 100%;
+}
+
+.vertical-submenu li a {
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.vertical-submenu li a:hover {
+    background-color: #FFA500;
+}
+
+.vertical-hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}
+
+.b1 {
+    font-size :1.2em;
+    color:#f57862;
+}
+.li1{
+    text-transform: capitalize;
+    margin-left: 25px;
+    font-size :1em;
+    color: #3b9c9c;
+}
+.li2{
+    text-transform: capitalize;
+    margin-left: 50px;
+    font-size: 0.8em;
+    color:#fff;
+}

@@ -1,0 +1,125 @@
+<div class="it-container">
+    <h1 class="it-title">Variables</h1>
+    <p class="it-content">A variable is named memory location whose value can change during run time.Since a variable holds a data item,it has a type.</p>
+    <div class="key-features">
+        <h2 class="it-heading">Rules For Naming Variables are as follows</h2>
+        <ol class="it-list">
+            <li>Variable name can be a combination of alphabets,digits & underscore.</li>
+            <p class="it-content">E.g. <code>int a_123;</code></p>
+            <li>First character of a variable name must be an alphabet.</li>
+            <p class="it-content">E.g. <code>int a2,ghj;</code></p>
+            <li>Variable name cannot include any other special characters such( ? , * , # , ; ) or a blank space.</li>
+            <p class="it-content">E.g. <code>int a*2;           //Not legal</code></p>
+            <li>A keyword cannot be used as a variable name.</li>
+            <p class="it-content">E.g. <code>float int;          //Not legal</code></p>
+            <li>In variable name,uppercase & lowercase are distinct.</li>
+            <p class="it-content">E.g. <code>int a,A;           //a & A are two different variables</code></p>
+        </ol>
+    </div>
+    <h2 class="it-heading">Declarations Of Variables</h2>
+    <p class="it-content">Declarations inform the complier that it will need to set aside space in memory to hold an object of a particular type (class) with a particular name.A variable declaration tells the compliers 
+        <ol class="it-list">
+            <li>Name Of Variable</li>
+            <li>Data-Type i.e. which type of data will be stored by the variable.</li>
+        </ol>
+        A declaration statement for variables has the general form: <br>
+        <code>data-type variable-name;</code><br>
+        For Example:<br>
+        <code>int total;            //declares total</code><br>
+        A variable must be declared before it can be used.
+    </p>
+    <h2 class="it-heading">Initialization Of Variables</h2>
+    <p class="it-content">The syntax or rule for assigning initial value to thr variables during declaration is called initialization.<br>
+        <code>data-type variable-name = initialial-value;</code><br>
+        For Example:<br>
+        <code>float pi = 3.14159 ;</code>
+    </p>
+    <h2 class="it-heading">Dynamic initialization of variables</h2>
+    <p class="it-content">A nice feature of C++ is that variable declaration and initialization may be freely intermixed and contained with any other statement; the only requirement is that a variable must be declared prior to its use. For very large programs this is a plus, because it allows variables to be declared close to where they will be used. The previous example can be re-written as :</p>
+
+    <div class="simple-program">
+        <div class="code-block-container">
+            <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+            <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+            <button class="compile-button" data-compiler-url="https://www.jdoodle.com/iembed/v0/LE1"><i class="fas fa-play"></i>  Compile it!</button>
+            <pre class="code-block">
+                <code class="code">
+    #include &lt;iostream&gt;
+    using namespace std;
+
+    int main() {
+        float grade1 = 85.5,grade2 = 97.0;
+        float total = grade1 + grade2;
+        float average = total / 2.0f;       //divide the total by 2.0
+        cout &lt;&lt; "The average grade is " &lt;&lt; average &lt;&lt; endl;
+        return 0;
+    }</code>
+            </pre>
+        </div>
+    </div>
+    <h3 class="hl-white">Screen Display :</h3>
+    <pre class="code-block">
+        <code class="code">
+            The average grade is 91.25
+        </code>
+    </pre>
+    <h2 class="it-heading">Reference Variables</h2>
+    <p class="it-content">Reference is an alias or another name or synonym for a variable having same value as its parent i.e. point to same memory location.</p>
+    <div class="simple-program">
+    <h2 class="hl-white">Example : Sample C++ program</h2>
+  <div class="code-block-container">
+    <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+    <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+    <button class="compile-button" data-compiler-url="https://www.jdoodle.com/iembed/v0/LEb"><i class="fas fa-play"></i>  Compile it!</button>
+    <pre class="code-block">
+        <code class="code">
+/*HELLO.CPP : First C++ program */
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a;
+    int &r = a;
+    cout &lt;&lt; "Enter a ? " ;
+    cin &gt;&gt; a;
+    cout &lt;&lt; "\nValue of a : " &lt;&lt; a;
+    cout &lt;&lt; "\nValue of r : " &lt;&lt; r;
+    r = r + 10;     // if r=10 ,r=10+10=20
+    cout &lt;&lt; "\nNow value of a : " &lt;&lt; a;
+    cout &lt;&lt; "\nNow value of r : " &lt;&lt; r;
+    return 0;
+}
+</code>
+    </pre>
+</div>
+    </div>
+
+    <h3 class="hl-white">Screen Display :</h3>
+    <pre class="code-block">
+        <code class="code">
+            Enter a ? 14
+
+            Value of a : 14
+            Value of r : 14
+            Now value of a : 24
+            Now value of r : 24
+        </code>
+    </pre>
+
+    <br>
+    <div class="main-content">
+        <div class="button-container">
+          <button class="button left-button" onclick="loadContent('cppStructure')">
+            <i class="fas fa-chevron-left"></i>
+            <a class="tp" href="#top">Previous</a>
+          </button>
+        </div>
+        
+        <div class="button-container">
+          <button class="button right-button" onclick="loadContent('dataTypes')"> 
+            <a class="tp" href="#top">Next</a>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+</div>

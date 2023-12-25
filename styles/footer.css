@@ -1,0 +1,40 @@
+
+
+/* Reset some default styles */
+body, p, hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.custom-footer-bottom {
+    margin-top: 10px;
+}
+
+.custom-motivational-line {
+    font-style: italic;
+    color: #FFCF71;
+    margin-top: 10px;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: absolute;
+    width: 100%;
+    animation-name: anim-slide-up, anim-fade-in-out, anim-scale, anim-rotate, anim-slide-down;
+}
+
+/* Rest of the animation keyframes remain unchanged */
+
+hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}

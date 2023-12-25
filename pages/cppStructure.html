@@ -1,0 +1,67 @@
+<div class="it-container">
+  <h1 class="it-title">Structure Of C++ Programming</h1>
+  <p class="it-content">Here is a sample C++ program to illustrate its structure : hello.cpp </p>
+  <h2 class="hl-white">Example : Sample C++ program</h2>
+  <div class="code-block-container">
+    <button class="copy-button"><i class="fas fa-copy"></i>  Copy</button>
+    <button class="quick-save-button"><i class="far fa-save"></i>  Quick Save!</button>
+    <button class="compile-button" data-compiler-url="https://www.jdoodle.com/iembed/v0/L8H"><i class="fas fa-play"></i>  Compile it!</button>
+    <pre class="code-block">
+        <code class="code">
+/*HELLO.CPP : First C++ program */
+#include &lt;iostream&gt;
+
+int main() {
+std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+return 0;
+}</code>
+    </pre>
+</div>
+<div class="key-features">
+  <h2 class="it-heading">Parts of C++ Program</h2>
+  <ol class="it-list">
+    <li>Comments -a type of program documentation</li>
+    <code>// indicates that the remainder of the line is a comment</code><br>
+    <code>/* comments can also look like this for multiple-lines  */</code>
+    <li>A preprocessor directive</li>
+    <code>#include &lt;iostream.h&gt;</code>
+    <p class="it-container">Tells the pre-processor to include in the program the contents of the I/O stream header file called iostream.h.This allows us to use standard stream input and output objects like <span class="h1-white">cout (displays to the screen).</p>
+    <li>Main function header</li>
+    <code>int main()</code>
+    <p class="it-content">Every C++ program has at least one function,called main. And there is ONLY ONE main. Program execution begins with first statement in main.</p>
+    <li>Braces</li>
+    <code> {  } </code><br>
+    <code> { brackets denote the body of the function } </code>
+    <li>Statement terminator</li>
+    <code>;</code>
+    <p class="it-content">Every C++ statement must end with a semicolon.</p>
+    <li>Stream insertion and exertion operator </li>
+    <code> &lt;&lt;   and    &gt;&gt;</code>
+    <p class="it-content">Expression to the right of the operator is insertes (sent) to the cout object (the diplasy screen.</p>
+    <p>Exertion is totally opposite for it.</p>
+    <li>Newline escape in an sequence</li>
+    <code>\n</code>
+    <p class="it-content">The backslash is an on escape character.</p>
+    <li>Exiting from the function</li>
+    <code>return 0;</code><br>
+    <p class="it-content">In this case control over execution is transferred back to the operating system.</p>
+  </ol>
+</div>
+<br>
+    <div class="main-content">
+        <div class="button-container">
+          <button class="button left-button" onclick="loadContent('cppEnvro')">
+            <i class="fas fa-chevron-left"></i>
+            <a class="tp" href="#top">Previous</a>
+          </button>
+        </div>
+        
+        <div class="button-container">
+          <button class="button right-button" onclick="loadContent('variables')"> 
+            <a class="tp" href="#top">Next</a>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
