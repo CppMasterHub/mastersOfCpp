@@ -102,15 +102,16 @@ function loadContent(page) {
 }
 
 
-function displayPopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "block";
-}
+ function displayPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
 
-function closePopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
-}function checkScreenWidth() {
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+function checkScreenWidth() {
     var isMobileView = !window.matchMedia("(min-width: 768px)").matches;
     var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
